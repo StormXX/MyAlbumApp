@@ -9,12 +9,16 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
-
+@synthesize nav;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    _cv=[[ViewController alloc] init];
+    nav=[[UINavigationController alloc] initWithRootViewController:_cv];
+    _cv.title=@"honey";
+    self.window.rootViewController=nav;
     [self.window makeKeyAndVisible];
     return YES;
 }

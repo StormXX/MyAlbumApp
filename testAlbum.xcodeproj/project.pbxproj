@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2013699198E2E5A005DBC59 /* print2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2013698198E2E5A005DBC59 /* print2.jpg */; };
 		A213238B198CEA230004C764 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A213238A198CEA230004C764 /* Foundation.framework */; };
 		A213238D198CEA230004C764 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A213238C198CEA230004C764 /* CoreGraphics.framework */; };
 		A213238F198CEA230004C764 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A213238E198CEA230004C764 /* UIKit.framework */; };
@@ -19,6 +20,10 @@
 		A21323A6198CEA230004C764 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A213238E198CEA230004C764 /* UIKit.framework */; };
 		A21323AE198CEA230004C764 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A21323AC198CEA230004C764 /* InfoPlist.strings */; };
 		A21323B0198CEA230004C764 /* testAlbumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A21323AF198CEA230004C764 /* testAlbumTests.m */; };
+		A21323C1198CEC210004C764 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A21323C0198CEC210004C764 /* ViewController.m */; };
+		A21323C4198CF07B0004C764 /* myCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A21323C3198CF07B0004C764 /* myCell.m */; };
+		A21323C6198CF1270004C764 /* print5.png in Resources */ = {isa = PBXBuildFile; fileRef = A21323C5198CF1270004C764 /* print5.png */; };
+		F48574B73447410C9D339A79 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E2A13F499D46AF81D606B1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A2013698198E2E5A005DBC59 /* print2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = print2.jpg; sourceTree = "<group>"; };
 		A2132387198CEA230004C764 /* testAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A213238A198CEA230004C764 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A213238C198CEA230004C764 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +54,13 @@
 		A21323AB198CEA230004C764 /* testAlbumTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testAlbumTests-Info.plist"; sourceTree = "<group>"; };
 		A21323AD198CEA230004C764 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A21323AF198CEA230004C764 /* testAlbumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testAlbumTests.m; sourceTree = "<group>"; };
+		A21323BF198CEC210004C764 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A21323C0198CEC210004C764 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A21323C2198CF07B0004C764 /* myCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myCell.h; sourceTree = "<group>"; };
+		A21323C3198CF07B0004C764 /* myCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myCell.m; sourceTree = "<group>"; };
+		A21323C5198CF1270004C764 /* print5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = print5.png; sourceTree = "<group>"; };
+		BFD5CADF38464905BE76A126 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		C7E2A13F499D46AF81D606B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,7 @@
 				A213238D198CEA230004C764 /* CoreGraphics.framework in Frameworks */,
 				A213238F198CEA230004C764 /* UIKit.framework in Frameworks */,
 				A213238B198CEA230004C764 /* Foundation.framework in Frameworks */,
+				F48574B73447410C9D339A79 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +95,7 @@
 				A21323A9198CEA230004C764 /* testAlbumTests */,
 				A2132389198CEA230004C764 /* Frameworks */,
 				A2132388198CEA230004C764 /* Products */,
+				BFD5CADF38464905BE76A126 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +115,7 @@
 				A213238C198CEA230004C764 /* CoreGraphics.framework */,
 				A213238E198CEA230004C764 /* UIKit.framework */,
 				A21323A3198CEA230004C764 /* XCTest.framework */,
+				C7E2A13F499D46AF81D606B1 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,8 +123,14 @@
 		A2132390198CEA230004C764 /* testAlbum */ = {
 			isa = PBXGroup;
 			children = (
+				A2013698198E2E5A005DBC59 /* print2.jpg */,
+				A21323C5198CF1270004C764 /* print5.png */,
 				A2132399198CEA230004C764 /* AppDelegate.h */,
 				A213239A198CEA230004C764 /* AppDelegate.m */,
+				A21323BF198CEC210004C764 /* ViewController.h */,
+				A21323C0198CEC210004C764 /* ViewController.m */,
+				A21323C2198CF07B0004C764 /* myCell.h */,
+				A21323C3198CF07B0004C764 /* myCell.m */,
 				A213239C198CEA230004C764 /* Images.xcassets */,
 				A2132391198CEA230004C764 /* Supporting Files */,
 			);
@@ -151,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A21323B3198CEA230004C764 /* Build configuration list for PBXNativeTarget "testAlbum" */;
 			buildPhases = (
+				95FFED03DFB54481900328C1 /* Check Pods Manifest.lock */,
 				A2132383198CEA230004C764 /* Sources */,
 				A2132384198CEA230004C764 /* Frameworks */,
 				A2132385198CEA230004C764 /* Resources */,
+				AB88525590884CE290353F9C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,6 +243,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2013699198E2E5A005DBC59 /* print2.jpg in Resources */,
+				A21323C6198CF1270004C764 /* print5.png in Resources */,
 				A2132395198CEA230004C764 /* InfoPlist.strings in Resources */,
 				A213239D198CEA230004C764 /* Images.xcassets in Resources */,
 			);
@@ -234,11 +260,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		95FFED03DFB54481900328C1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB88525590884CE290353F9C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A2132383198CEA230004C764 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A21323C1198CEC210004C764 /* ViewController.m in Sources */,
+				A21323C4198CF07B0004C764 /* myCell.m in Sources */,
 				A213239B198CEA230004C764 /* AppDelegate.m in Sources */,
 				A2132397198CEA230004C764 /* main.m in Sources */,
 			);
@@ -354,6 +415,7 @@
 		};
 		A21323B4198CEA230004C764 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFD5CADF38464905BE76A126 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -367,6 +429,7 @@
 		};
 		A21323B5198CEA230004C764 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFD5CADF38464905BE76A126 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -437,6 +500,7 @@
 				A21323B5198CEA230004C764 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A21323B6198CEA230004C764 /* Build configuration list for PBXNativeTarget "testAlbumTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +509,7 @@
 				A21323B8198CEA230004C764 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
