@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "HeadPic.h"
+#import "MyFavorite.h"
+@interface AppDelegate : UIResponder <UIApplicationDelegate,UITabBarControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong,nonatomic) ViewController *cv;
-@property (strong,nonatomic)  UINavigationController * nav;
+@property (strong,nonatomic) NSArray * controllers;
+@property (strong,nonatomic) UITabBarController * tabbar;
 @end

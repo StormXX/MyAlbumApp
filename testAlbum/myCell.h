@@ -10,5 +10,4 @@
 
 @interface myCell : UICollectionViewCell
 @property (strong,nonatomic) UIImageView * image;
-@property (strong,nonatomic) UILabel * label;
 @end

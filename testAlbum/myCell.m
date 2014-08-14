@@ -9,17 +9,14 @@
 #import "myCell.h"
 
 @implementation myCell
-@synthesize image,label;
+@synthesize image;
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         CGSize cellsize=self.frame.size;
-        image=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, cellsize.width,cellsize.height-30)];
-        label =[[UILabel alloc] initWithFrame:CGRectMake(0, cellsize.height-35, cellsize.width, 30)];
-        [label setTextAlignment:UITextAlignmentCenter];
+        image=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, cellsize.width,cellsize.height)];
         [self addSubview:image];
-        [self addSubview:label];
     }
     return self;
 }

@@ -9,16 +9,37 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
-@synthesize nav;
+@synthesize controllers,tabbar;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    _cv=[[ViewController alloc] init];
-    nav=[[UINavigationController alloc] initWithRootViewController:_cv];
-    _cv.title=@"honey";
-    self.window.rootViewController=nav;
+    
+    ViewController * wallpageView=[[ViewController alloc] init];
+    UITabBarItem * first_tab=[[UITabBarItem alloc] initWithTitle:@"wallpage" image:nil tag:001];
+    UINavigationController * nav_wallpage=[[UINavigationController alloc] initWithRootViewController:wallpageView];
+    wallpageView.title=@"WallPage";
+    [nav_wallpage setTabBarItem:first_tab];
+    
+    HeadPic * headpicView=[[HeadPic alloc] init];
+    UITabBarItem * second_tab=[[UITabBarItem alloc] initWithTitle:@"headpic" image:nil tag:002];
+    UINavigationController * nav_headpic=[[UINavigationController alloc] initWithRootViewController:headpicView];
+    headpicView.title=@"HeadPic";
+    [nav_headpic setTabBarItem:second_tab];
+    
+    MyFavorite * favoriteView=[[MyFavorite alloc] init];
+    UITabBarItem * last_tab=[[UITabBarItem alloc] initWithTitle:@"Favorite" image:nil tag:003];
+    UINavigationController * nav_favorite=[[UINavigationController alloc] initWithRootViewController:favoriteView];
+    favoriteView.title=@"Favorite";
+    [nav_favorite setTabBarItem:last_tab];
+    
+    controllers=[NSArray arrayWithObjects:nav_wallpage,nav_headpic,nav_favorite, nil];
+    tabbar=[[UITabBarController alloc] init];
+    tabbar.delegate=self;
+    tabbar.viewControllers=controllers;
+
+    self.window.rootViewController=tabbar;
     [self.window makeKeyAndVisible];
     return YES;
 }

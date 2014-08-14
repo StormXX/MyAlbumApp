@@ -27,13 +27,13 @@
 {
     [super viewDidLoad];
     self.photos=[[NSMutableArray alloc] init];
-    [photos addObject:[MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"print5" ofType:@"png"]]]];
-    [photos addObject:[MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"print2" ofType:@"jpg"]]]];
-    [photos addObject:[MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"print5" ofType:@"png"]]]];
-    [photos addObject:[MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"print5" ofType:@"png"]]]];
-    [photos addObject:[MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"print5" ofType:@"png"]]]];
-    [photos addObject:[MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"print5" ofType:@"png"]]]];
-    [photos addObject:[MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"print5" ofType:@"png"]]]];
+    [photos addObject:[MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"2pic" ofType:@"jpg"]]]];
+    [photos addObject:[MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"2pic" ofType:@"jpg"]]]];
+    [photos addObject:[MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"2pic" ofType:@"jpg"]]]];
+    [photos addObject:[MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"1pic" ofType:@"jpg"]]]];
+    [photos addObject:[MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"2pic" ofType:@"jpg"]]]];
+    [photos addObject:[MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"1pic" ofType:@"jpg"]]]];
+    [photos addObject:[MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"1pic" ofType:@"jpg"]]]];
     
     //设置布局
     UICollectionViewFlowLayout *flowLayout=[[UICollectionViewFlowLayout alloc] init];
@@ -79,30 +79,28 @@
     myCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
     //[cell sizeToFit];
     cell.backgroundColor=[UIColor redColor];
-    UIImage *mypic=[UIImage imageNamed:@"print5.png"];
+    UIImage *mypic=[UIImage imageNamed:@"2pic.jpg"];
     cell.image.image=mypic;
-    cell.label.text=@"honey";
     return cell;
 }
 
 //cell的布局
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    UIEdgeInsets top = {5,10,15,5};
+    UIEdgeInsets top = {2,2,2,2};
     return top;
 }
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    //NSLog(@"%f",(kDeviceHeight-88-49)/4.0);
-    return CGSizeMake(95,160);
+    return CGSizeMake(103,183);
 }
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 5;
+    return 3;
 }
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 5;
+    return 3;
 }
 
 //点击cell的动作
