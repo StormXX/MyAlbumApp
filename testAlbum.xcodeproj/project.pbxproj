@@ -23,6 +23,7 @@
 		A21323C1198CEC210004C764 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A21323C0198CEC210004C764 /* ViewController.m */; };
 		A21323C4198CF07B0004C764 /* myCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A21323C3198CF07B0004C764 /* myCell.m */; };
 		A21323C6198CF1270004C764 /* print5.png in Resources */ = {isa = PBXBuildFile; fileRef = A21323C5198CF1270004C764 /* print5.png */; };
+		A214F5C819A1CDDA0032C088 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = A214F5C719A1CDDA0032C088 /* 11.png */; };
 		A2D1FD69199C94EF00EB577D /* HeadPic.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D1FD68199C94EF00EB577D /* HeadPic.m */; };
 		A2D1FD6C199C951500EB577D /* MyFavorite.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D1FD6B199C951500EB577D /* MyFavorite.m */; };
 		A2D1FD6E199C9AC300EB577D /* 1pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2D1FD6D199C9AC300EB577D /* 1pic.jpg */; };
@@ -63,6 +64,7 @@
 		A21323C2198CF07B0004C764 /* myCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myCell.h; sourceTree = "<group>"; };
 		A21323C3198CF07B0004C764 /* myCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myCell.m; sourceTree = "<group>"; };
 		A21323C5198CF1270004C764 /* print5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = print5.png; sourceTree = "<group>"; };
+		A214F5C719A1CDDA0032C088 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
 		A2D1FD67199C94EF00EB577D /* HeadPic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadPic.h; sourceTree = "<group>"; };
 		A2D1FD68199C94EF00EB577D /* HeadPic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadPic.m; sourceTree = "<group>"; };
 		A2D1FD6A199C951500EB577D /* MyFavorite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavorite.h; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		A2D1FD66199C61FD00EB577D /* image */ = {
 			isa = PBXGroup;
 			children = (
+				A214F5C719A1CDDA0032C088 /* 11.png */,
 				A2D1FD6F199C9DA100EB577D /* 2pic.jpg */,
 				A2D1FD6D199C9AC300EB577D /* 1pic.jpg */,
 				A21323C5198CF1270004C764 /* print5.png */,
@@ -272,6 +275,7 @@
 				A2D1FD6E199C9AC300EB577D /* 1pic.jpg in Resources */,
 				A2132395198CEA230004C764 /* InfoPlist.strings in Resources */,
 				A213239D198CEA230004C764 /* Images.xcassets in Resources */,
+				A214F5C819A1CDDA0032C088 /* 11.png in Resources */,
 				A2D1FD71199C9DA100EB577D /* 2pic.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

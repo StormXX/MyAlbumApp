@@ -13,7 +13,7 @@
 @end
 
 @implementation HeadPic
-
+@synthesize picList;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -26,6 +26,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    picList=[[NSMutableArray alloc] init];
+    [picList addObject:[UIImage imageNamed:@"11.png"]];
+    [picList addObject:[UIImage imageNamed:@"11.png"]];
+    [picList addObject:[UIImage imageNamed:@"11.png"]];
+    [picList addObject:[UIImage imageNamed:@"11.png"]];
+    [picList addObject:[UIImage imageNamed:@"11.png"]];
+    [picList addObject:[UIImage imageNamed:@"11.png"]];
+    [picList addObject:[UIImage imageNamed:@"11.png"]];
+    [picList addObject:[UIImage imageNamed:@"11.png"]];
+    [picList addObject:[UIImage imageNamed:@"11.png"]];
+    
+    CGSize picSize={106.6,152};
+    int i=0;
+    for (i =0 ; i<[picList count]; i++) {
+        CGRect btnFrame={(picSize.width) * (i%3),(picSize.height) * (i/3)+64,picSize.width,picSize.height};
+        UIButton * button=[[UIButton alloc] initWithFrame:btnFrame];
+        button.tag=100+i;
+        [button setBackgroundImage:[picList objectAtIndex:i] forState:UIControlStateNormal];
+        [self.view addSubview:button];
+    }
+                        
+    
     // Do any additional setup after loading the view.
 }
 

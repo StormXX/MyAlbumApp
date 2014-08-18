@@ -42,7 +42,7 @@
     [flowLayout setMinimumLineSpacing:20];
     //初始化cv
     CGRect bounds=self.view.bounds;
-    _cv=[[UICollectionView alloc] initWithFrame:CGRectMake(bounds.origin.x, bounds.origin.y+20, bounds.size.width, bounds.size.height-40) collectionViewLayout:flowLayout];
+    _cv=[[UICollectionView alloc] initWithFrame:CGRectMake(bounds.origin.x, bounds.origin.y, bounds.size.width, bounds.size.height) collectionViewLayout:flowLayout];
     [_cv setBackgroundColor:[UIColor clearColor]];
     //注册cell
     [_cv registerClass:[myCell class] forCellWithReuseIdentifier:@"cell"];
@@ -116,8 +116,7 @@
     browser.enableGrid=YES;
     browser.startOnGrid=NO;
     browser.wantsFullScreenLayout=YES;
-    
-    [browser setCurrentPhotoIndex:1];
+    [browser setCurrentPhotoIndex:indexPath.row];
     [browser showNextPhotoAnimated:YES];
     [browser showPreviousPhotoAnimated:YES];
     [self.navigationController pushViewController:browser animated:YES];

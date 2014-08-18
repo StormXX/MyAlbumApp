@@ -10,4 +10,5 @@
 
 @interface HeadPic : UIViewController
 
+@property(strong,nonatomic) NSMutableArray * picList;
 @end
